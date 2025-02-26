@@ -1,0 +1,102 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250210_120003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-10 12:00:15.876758
+Config  : ./hr/private/backups/20250210_120003-hr-site_config_backup.json 188.0B
+Database: ./hr/private/backups/20250210_120003-hr-database.sql.gz         1.3MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250210_180003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-10 18:00:12.471678
+Config  : ./hr/private/backups/20250210_180003-hr-site_config_backup.json 188.0B
+Database: ./hr/private/backups/20250210_180003-hr-database.sql.gz         1.3MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250212_120003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-12 12:00:11.413928
+Config  : ./hr/private/backups/20250212_120003-hr-site_config_backup.json 188.0B
+Database: ./hr/private/backups/20250212_120003-hr-database.sql.gz         1.3MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250213_120003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-13 12:00:08.834218
+Config  : ./hr/private/backups/20250213_120003-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250213_120003-hr-database.sql.gz         1.3MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250214_120003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-14 12:00:09.600650
+Config  : ./hr/private/backups/20250214_120003-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250214_120003-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250217_120002-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-17 12:00:09.148101
+Config  : ./hr/private/backups/20250217_120002-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250217_120002-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250217_180005-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-17 18:00:14.043752
+Config  : ./hr/private/backups/20250217_180005-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250217_180005-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250218_120002-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-18 12:00:05.913554
+Config  : ./hr/private/backups/20250218_120002-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250218_120002-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250218_180004-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-18 18:00:12.845078
+Config  : ./hr/private/backups/20250218_180004-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250218_180004-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250219_120004-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-19 12:00:18.123216
+Config  : ./hr/private/backups/20250219_120004-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250219_120004-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250219_180003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-19 18:00:15.700164
+Config  : ./hr/private/backups/20250219_180003-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250219_180003-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250220_120002-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-20 12:00:06.769117
+Config  : ./hr/private/backups/20250220_120002-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250220_120002-hr-database.sql.gz         1.4MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250220_180004-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-20 18:00:12.916979
+Config  : ./hr/private/backups/20250220_180004-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250220_180004-hr-database.sql.gz         1.5MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250221_120003-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-21 12:00:07.575891
+Config  : ./hr/private/backups/20250221_120003-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250221_120003-hr-database.sql.gz         1.5MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250224_000005-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-24 00:00:18.556224
+Config  : ./hr/private/backups/20250224_000005-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250224_000005-hr-database.sql.gz         1.5MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250224_120002-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-24 12:00:13.693495
+Config  : ./hr/private/backups/20250224_120002-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250224_120002-hr-database.sql.gz         1.5MiB
+Backup for Site hr has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=hr --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false hr | /usr/bin/gzip >> ./hr/private/backups/20250225_120006-hr-database.sql.gz
+
+Backup Summary for hr at 2025-02-25 12:00:20.135965
+Config  : ./hr/private/backups/20250225_120006-hr-site_config_backup.json 342.0B
+Database: ./hr/private/backups/20250225_120006-hr-database.sql.gz         1.5MiB
+Backup for Site hr has been successfully completed

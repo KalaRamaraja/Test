@@ -1,0 +1,62 @@
+2025-02-12 20:50:57,244 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {}
+2025-02-17 14:11:16,024 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doc': '{"name":"HR-LAP-2025-00003","owner":"Administrator","creation":"2025-02-17 14:10:57.554958","modified":"2025-02-17 14:11:11.596479","modified_by":"Administrator","docstatus":0,"idx":0,"naming_series":"HR-LAP-.YYYY.-","employee":"HR-EMP-00002","employee_name":"Manonraj J","leave_type":"Casual Leave","company":"Trinity Private Limited","department":"Research & Development","from_date":"2025-02-19","to_date":"2025-02-19","half_day":0,"total_leave_days":1,"description":"MJ","leave_balance":11,"leave_approver":"Administrator","leave_approver_name":"You","follow_via_email":1,"posting_date":"2025-02-17","status":"Approved","doctype":"Leave Application","__onload":{"self_leave_approval_not_allowed":0},"half_day_date":""}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-02-21 22:31:43,098 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-22 21:04:25,539 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-22 21:20:58,682 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 11:32:46,559 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:45:13,829 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:46:11,307 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'name': 'l5ifod8t6r', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-02-24 12:47:01,325 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:47:16,622 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:49:26,651 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:51:04,005 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 12:52:33,047 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'doctype': 'ResumeParsing', 'with_parent': '1', 'cached_timestamp': '2025-02-24 10:42:42.873253', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-02-24 13:00:12,142 ERROR frappe Error while inserting deferred Error Log record: Error Log b6tjpjp58c: 'Title' (Module import failed for ResumeParsing, the DocType you're trying to open might be deleted.
+Error: cannot import name 'extract_text' from 'pdfminer.high_level' (/home/manonraj/HR/env/lib/python3.10/site-packages/pdfminer/high_level.py)) will get truncated, as max characters allowed is 140
+Site: hr
+Form Dict: {}
+2025-02-24 13:00:12,146 ERROR frappe Error while inserting deferred Error Log record: Error Log o6lvqudcpg: 'Title' (Module import failed for ResumeParsing, the DocType you're trying to open might be deleted.
+Error: cannot import name 'extract_text' from 'pdfminer.high_level' (/home/manonraj/HR/env/lib/python3.10/site-packages/pdfminer/high_level.py)) will get truncated, as max characters allowed is 140
+Site: hr
+Form Dict: {}
+2025-02-24 13:00:12,149 ERROR frappe Error while inserting deferred Error Log record: Error Log vu9e0mjag3: 'Title' (Module import failed for ResumeParsing, the DocType you're trying to open might be deleted.
+Error: cannot import name 'extract_text' from 'pdfminer.high_level' (/home/manonraj/HR/env/lib/python3.10/site-packages/pdfminer/high_level.py)) will get truncated, as max characters allowed is 140
+Site: hr
+Form Dict: {}
+2025-02-24 13:00:12,153 ERROR frappe Error while inserting deferred Error Log record: Error Log n8k1ohri4a: 'Title' (Module import failed for ResumeParsing, the DocType you're trying to open might be deleted.
+Error: cannot import name 'extract_text' from 'pdfminer.high_level' (/home/manonraj/HR/env/lib/python3.10/site-packages/pdfminer/high_level.py)) will get truncated, as max characters allowed is 140
+Site: hr
+Form Dict: {}
+2025-02-24 13:00:12,157 ERROR frappe Error while inserting deferred Error Log record: Error Log k8plotmc81: 'Title' (Module import failed for ResumeParsing, the DocType you're trying to open might be deleted.
+Error: cannot import name 'extract_text' from 'pdfminer.high_level' (/home/manonraj/HR/env/lib/python3.10/site-packages/pdfminer/high_level.py)) will get truncated, as max characters allowed is 140
+Site: hr
+Form Dict: {}
+2025-02-25 11:14:33,940 ERROR frappe New Exception collected in error log
+Site: hr
+Form Dict: {'args': '{"job_applicant":"manonraj2225@gmail.com","status":"Accepted"}', 'cmd': 'hrms.hr.doctype.interview.interview.update_job_applicant_status'}

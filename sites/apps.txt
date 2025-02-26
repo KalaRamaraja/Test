@@ -1,0 +1,6 @@
+frappe
+chat
+erpnext
+hrms
+managment
+payments

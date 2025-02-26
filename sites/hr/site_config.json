@@ -1,0 +1,16 @@
+{
+    "active_domains": [
+        "Human Resources"
+    ],
+    "db_name": "hr",
+    "db_password": "V9raEQeG8BapS8Go",
+    "db_type": "mariadb",
+    "encryption_key": "FBO72JqiqV0AkiZpsiwUhjx-ulsHwn3fMVTxF2uPT_I=",
+    "user_type_doctype_limit": {
+        "employee_self_service": 40
+    },
+    "logging": {
+        "level": "DEBUG"
+    }
+}
+
