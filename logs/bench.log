@@ -1,0 +1,152 @@
+2025-02-26 14:34:51,074 DEBUG cd kalaerp && python3 -m venv env
+2025-02-26 14:34:54,598 DEBUG cd kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-26 14:34:56,565 DEBUG cd kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet wheel
+2025-02-26 14:34:58,401 LOG Getting frappe
+2025-02-26 14:34:58,401 DEBUG cd kalaerp/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 14:35:02,680 LOG Installing frappe
+2025-02-26 14:35:02,680 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/frappe 
+2025-02-26 14:35:27,565 DEBUG cd /home/dell/kalaerp/apps/frappe && yarn install --check-files
+2025-02-26 14:35:41,007 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 14:35:41,007 DEBUG cd kalaerp && bench build
+2025-02-26 14:35:41,171 INFO /usr/local/bin/bench build
+2025-02-26 14:36:00,141 LOG setting up backups
+2025-02-26 14:36:00,154 LOG backups were set up
+2025-02-26 14:36:00,154 INFO Bench kalaerp initialized
+2025-02-26 14:36:24,568 INFO /usr/local/bin/bench new-site kalaerp --db-name kalaerp
+2025-02-26 14:37:43,292 INFO /usr/local/bin/bench get-app payments
+2025-02-26 14:37:43,834 LOG Getting payments
+2025-02-26 14:37:43,835 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2025-02-26 14:37:45,043 LOG Installing payments
+2025-02-26 14:37:45,043 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/payments 
+2025-02-26 14:37:49,644 DEBUG bench build --app payments
+2025-02-26 14:37:49,840 INFO /usr/local/bin/bench build --app payments
+2025-02-26 14:37:51,555 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 14:37:54,232 INFO /usr/local/bin/bench get-app --branch version-15 erpnext
+2025-02-26 14:37:54,731 LOG Getting erpnext
+2025-02-26 14:37:54,732 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 14:37:59,629 LOG Installing erpnext
+2025-02-26 14:37:59,629 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/erpnext 
+2025-02-26 14:38:04,881 DEBUG cd /home/dell/kalaerp/apps/erpnext && yarn install --check-files
+2025-02-26 14:38:05,307 DEBUG bench build --app erpnext
+2025-02-26 14:38:05,471 INFO /usr/local/bin/bench build --app erpnext
+2025-02-26 14:38:08,178 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 14:38:10,858 INFO /usr/local/bin/bench --site kalaerp install-app kalaerp
+2025-02-26 14:38:32,819 INFO /usr/local/bin/bench get-app --branch version-15 hrms
+2025-02-26 14:38:33,345 LOG Getting hrms
+2025-02-26 14:38:33,345 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 14:38:35,041 LOG Installing hrms
+2025-02-26 14:38:35,041 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/hrms 
+2025-02-26 14:38:37,205 DEBUG cd /home/dell/kalaerp/apps/hrms && yarn install --check-files
+2025-02-26 14:39:13,376 WARNING /usr/local/bin/bench get-app --branch version-15 hrms executed with exit code 1
+2025-02-26 14:39:41,873 INFO /usr/local/bin/bench --site kalaerp install-app erpnext
+2025-02-26 14:42:14,513 INFO /usr/local/bin/bench get-app --branch version-15 hrms
+2025-02-26 14:42:23,734 INFO App moved from apps/hrms to archived/apps/hrms-2025-02-26
+2025-02-26 14:42:23,738 LOG Getting hrms
+2025-02-26 14:42:23,738 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 14:42:25,941 LOG Installing hrms
+2025-02-26 14:42:25,941 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/hrms 
+2025-02-26 14:42:28,170 DEBUG cd /home/dell/kalaerp/apps/hrms && yarn install --check-files
+2025-02-26 14:42:55,921 DEBUG bench build --app hrms
+2025-02-26 14:42:56,081 INFO /usr/local/bin/bench build --app hrms
+2025-02-26 14:43:20,518 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 14:43:30,569 INFO /usr/local/bin/bench --site kalaerp install-app hrms
+2025-02-26 14:47:17,923 INFO /usr/local/bin/bench restart
+2025-02-26 14:47:17,930 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 14:47:45,346 INFO /usr/local/bin/bench --site kalaerp clear-cache
+2025-02-26 14:47:59,977 INFO /usr/local/bin/bench --site kalaerp clear-website-cache
+2025-02-26 14:48:09,812 INFO /usr/local/bin/bench build
+2025-02-26 14:48:54,675 INFO /usr/local/bin/bench --site kalaerp install-app hrms
+2025-02-26 14:50:54,988 INFO /usr/local/bin/bench start
+2025-02-26 14:50:55,305 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 14:50:55,332 INFO /usr/local/bin/bench worker
+2025-02-26 14:50:55,349 INFO /usr/local/bin/bench watch
+2025-02-26 14:50:55,355 INFO /usr/local/bin/bench schedule
+2025-02-26 14:53:57,303 INFO /usr/local/bin/bench use kalaerp
+2025-02-26 14:54:05,481 INFO /usr/local/bin/bench start
+2025-02-26 14:54:05,788 INFO /usr/local/bin/bench schedule
+2025-02-26 14:54:05,834 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 14:54:05,837 INFO /usr/local/bin/bench watch
+2025-02-26 14:54:05,840 INFO /usr/local/bin/bench worker
+2025-02-26 14:59:01,147 INFO /usr/local/bin/bench get-app hrms
+2025-02-26 14:59:04,194 INFO App moved from apps/hrms to archived/apps/hrms-2025-02-26_1
+2025-02-26 14:59:04,197 LOG Getting hrms
+2025-02-26 14:59:04,198 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 14:59:05,776 LOG Installing hrms
+2025-02-26 14:59:05,776 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/hrms 
+2025-02-26 14:59:07,881 DEBUG cd /home/dell/kalaerp/apps/hrms && yarn install --check-files
+2025-02-26 14:59:34,994 DEBUG bench build --app hrms
+2025-02-26 14:59:35,158 INFO /usr/local/bin/bench build --app hrms
+2025-02-26 14:59:59,203 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 15:00:20,555 INFO /usr/local/bin/bench --site kalaerp set-config active_domains ["Human Resources"] --parse
+2025-02-26 15:01:00,410 INFO /usr/local/bin/bench clear-cache
+2025-02-26 15:01:07,474 INFO /usr/local/bin/bench restart
+2025-02-26 15:01:07,480 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-26 15:01:11,469 INFO /usr/local/bin/bench start
+2025-02-26 15:01:11,754 INFO /usr/local/bin/bench watch
+2025-02-26 15:01:11,754 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 15:01:11,767 INFO /usr/local/bin/bench worker
+2025-02-26 15:01:11,835 INFO /usr/local/bin/bench schedule
+2025-02-26 15:02:40,770 INFO /usr/local/bin/bench start
+2025-02-26 15:02:41,055 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 15:02:41,059 INFO /usr/local/bin/bench schedule
+2025-02-26 15:02:41,074 INFO /usr/local/bin/bench watch
+2025-02-26 15:02:41,137 INFO /usr/local/bin/bench worker
+2025-02-26 17:03:55,799 INFO /usr/local/bin/bench start
+2025-02-26 17:05:12,979 INFO /usr/local/bin/bench start
+2025-02-26 17:06:44,830 INFO /usr/local/bin/bench start
+2025-02-26 17:07:06,677 INFO /usr/local/bin/bench start
+2025-02-26 17:07:16,788 INFO /usr/local/bin/bench start
+2025-02-26 17:08:52,159 INFO /usr/local/bin/bench start
+2025-02-26 17:08:52,432 INFO /usr/local/bin/bench watch
+2025-02-26 17:08:52,432 INFO /usr/local/bin/bench schedule
+2025-02-26 17:08:52,494 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 17:08:52,516 INFO /usr/local/bin/bench worker
+2025-02-26 17:10:10,627 INFO /usr/local/bin/bench start
+2025-02-26 17:10:10,909 INFO /usr/local/bin/bench worker
+2025-02-26 17:10:10,948 INFO /usr/local/bin/bench schedule
+2025-02-26 17:10:10,976 INFO /usr/local/bin/bench watch
+2025-02-26 17:10:10,980 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 17:25:30,606 INFO /usr/local/bin/bench start
+2025-02-26 17:25:30,873 INFO /usr/local/bin/bench worker
+2025-02-26 17:25:30,874 INFO /usr/local/bin/bench schedule
+2025-02-26 17:25:30,944 INFO /usr/local/bin/bench watch
+2025-02-26 17:25:30,954 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 17:25:53,586 INFO /usr/local/bin/bench start
+2025-02-26 17:25:53,872 INFO /usr/local/bin/bench worker
+2025-02-26 17:25:53,873 INFO /usr/local/bin/bench serve --port 8001
+2025-02-26 17:25:53,879 INFO /usr/local/bin/bench schedule
+2025-02-26 17:25:53,942 INFO /usr/local/bin/bench watch
+2025-02-28 11:06:53,440 INFO /usr/local/bin/bench start
+2025-02-28 11:06:53,825 INFO /usr/local/bin/bench worker
+2025-02-28 11:06:53,835 INFO /usr/local/bin/bench watch
+2025-02-28 11:06:53,856 INFO /usr/local/bin/bench serve --port 8001
+2025-02-28 11:06:53,886 INFO /usr/local/bin/bench schedule
+2025-02-28 12:00:01,475 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-28 12:08:49,003 INFO /usr/local/bin/bench start
+2025-02-28 12:11:24,254 INFO /usr/local/bin/bench start
+2025-02-28 12:11:24,717 INFO /usr/local/bin/bench serve --port 8001
+2025-02-28 12:11:24,723 INFO /usr/local/bin/bench schedule
+2025-02-28 12:11:24,727 INFO /usr/local/bin/bench watch
+2025-02-28 12:11:24,792 INFO /usr/local/bin/bench worker
+2025-02-28 12:35:19,801 INFO /usr/local/bin/bench new-app erpnkalademonext
+2025-02-28 12:35:19,807 LOG creating new app erpnkalademonext
+2025-02-28 12:37:15,536 LOG Installing erpnkalademonext
+2025-02-28 12:37:15,539 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/erpnkalademonext 
+2025-02-28 12:37:18,825 DEBUG bench build --app erpnkalademonext
+2025-02-28 12:37:19,052 INFO /usr/local/bin/bench build --app erpnkalademonext
+2025-02-28 12:37:21,168 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-28 12:38:08,689 INFO /usr/local/bin/bench --site kalaerp install-app erpnkalademonext
+2025-02-28 12:38:49,334 INFO /usr/local/bin/bench new-app erp
+2025-02-28 12:38:49,341 LOG creating new app erp
+2025-02-28 12:39:13,332 LOG Installing erp
+2025-02-28 12:39:13,335 DEBUG cd /home/dell/kalaerp && /home/dell/kalaerp/env/bin/python -m pip install --quiet --upgrade -e /home/dell/kalaerp/apps/erp 
+2025-02-28 12:39:16,465 DEBUG bench build --app erp
+2025-02-28 12:39:16,695 INFO /usr/local/bin/bench build --app erp
+2025-02-28 12:39:18,883 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-02-28 12:39:28,375 INFO /usr/local/bin/bench --site kalaerp install-app erp
+2025-02-28 12:39:48,501 INFO /usr/local/bin/bench use kalaerp
+2025-02-28 12:39:53,126 INFO /usr/local/bin/bench start
+2025-02-28 12:39:53,518 INFO /usr/local/bin/bench worker
+2025-02-28 12:39:53,572 INFO /usr/local/bin/bench serve --port 8001
+2025-02-28 12:39:53,595 INFO /usr/local/bin/bench schedule
+2025-02-28 12:39:53,604 INFO /usr/local/bin/bench watch

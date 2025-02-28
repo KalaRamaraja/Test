@@ -1,0 +1,6 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=kalaerp --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false kalaerp | /usr/bin/gzip >> ./kalaerp/private/backups/20250228_120001-kalaerp-database.sql.gz
+
+Backup Summary for kalaerp at 2025-02-28 12:00:04.716021
+Config  : ./kalaerp/private/backups/20250228_120001-kalaerp-site_config_backup.json 193.0B
+Database: ./kalaerp/private/backups/20250228_120001-kalaerp-database.sql.gz         1.3MiB
+Backup for Site kalaerp has been successfully completed

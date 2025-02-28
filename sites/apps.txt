@@ -1,0 +1,6 @@
+frappe
+hrms
+erpnkalademonext
+erp
+erpnext
+payments

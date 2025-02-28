@@ -1,0 +1,11 @@
+{
+ "active_domains": [
+  "Human Resources"
+ ],
+ "db_name": "kalaerp",
+ "db_password": "U12u2YE6BT6CoRbv",
+ "db_type": "mariadb",
+ "user_type_doctype_limit": {
+  "employee_self_service": 40
+ }
+}
